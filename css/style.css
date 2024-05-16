@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+.header {
+    height: 100vh;
+    background: url(../img/bg1.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+.menu {
+    padding: 0px 50px;
+    height: 50px;
+    /* width: 100vw; */
+    background-color: #202020;
+    /* border-radius: 0px 0px 15px 15px; */
+    box-shadow: 0px 0px 15px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.menu1, .menu2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.img-logo {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 8px 20px;
+    /* border-radius: 30px; */
+    color: black;
+}
+.menu-catalog {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 8px 20px;
+    /* border-radius: 30px; */
+    color: black;
+}
+.catalog-catalog{
+    margin-left: 10px;
+    /* background-color: blue; */
+}
+.catalog-img{
+    width: 15px;
+}
+.menu-search {
+    /* background-color: green; */
+}
+.form-search{
+    /* width: 200px; */
+    float: right;
+    /* margin-right: 30px; */
+    /* background-color: chocolate; */
+}
+.form-search input{
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    outline: none;
+    position: relative;
+    transition: .2s linear;
+    color: white;
+
+    /* background-color: aquamarine; */
+}
+.form-search input:focus{
+    box-shadow: 0 0 5px white;
+}
+/* .form-search button{
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 30px;
+} */
+/* .form-search button::before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #00e5ff;
+  } */
+.menu-shop-btn {
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(56, 129, 224); */
+}
+.menu-account {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(53, 255, 130); */
+}
+.account-name{
+    margin-right: 5px;
+    /* background-color: rgb(224, 56, 188); */
+}
+/* ---------------------------------------------------------------- */
+.header-content {
+    padding: 0 100px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.header-text {
+    width: 50%;
+    /* background-color: green; */
+    /* background-color: rgb(56, 129, 224); */
+}
+.header-h1 {
+    font-size: 35px;
+    /* background-color: rgb(56, 224, 112); */
+}
+.header-p {
+    font-size: 20px;
+    max-width: 70%;
+}
+.header-btn{
+    margin-top: 50px;
+}
+.header-btn-btn {
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+    
+}
+.header-img {
+    /* background-color: blue; */
+    width: 50%;
+    /* background-color: rgb(224, 56, 224); */
+}
+.header-img img{
+    top: 35%;
+    width: 40%;
+    position: absolute;
+    /* background-color: aqua; */
+}
+
+/* ---------------------------------------------------------------- */
+
+.section2 {
+    background-color: #DEF3F0;
+}
+.section2_content {
+    padding: 0 100px;
+    /* background-color: rgb(218, 56, 224); */
+}
+.sec2-h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    /* background-color: rgb(56, 224, 120); */
+}
+.sec2-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(224, 56, 56); */
+}
+.sec2-chair {
+    /* background-color: rgb(56, 129, 224); */
+    /* background-color: green; */
+}
+.sec2-img {
+    /* background-color: rgb(146, 224, 56); */
+}
+.sec2-text {
+    max-width: 40%;
+    /* background-color: red; */
+}
+.sec2-h3 {
+    /* background-color: rgb(56, 129, 224); */
+}
+.sec2-p {
+    /* background-color: rgb(56, 129, 224); */
+}
