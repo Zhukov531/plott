@@ -33,33 +33,42 @@ body{
     align-items: center;
     justify-content: space-between;
     color: white;
+
+
 }
 .menu1, .menu2{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: red; */
-}
+    /* background-color: green; */
+    padding: 0;
+    margin: 0;
+ }
+ /*
 .img-logo {
     background-color: #ffffff;
     font-size: 18px;
     padding: 8px 20px;
-    /* border-radius: 30px; */
+    /* border-radius: 30px; 
     color: black;
-}
-.menu-catalog {
+} */
+/* .menu-catalog {
     display: flex;
     align-items: center;
     background-color: #ffffff;
     font-size: 18px;
     margin-left: 20px;
     padding: 8px 20px;
-    /* border-radius: 30px; */
+    border-radius: 30px;
     color: black;
+} */
+.menu-catalog-content{
+    /* background-color: red; */
+    width: 100%;
 }
 .catalog-catalog{
-    margin-left: 10px;
-    /* background-color: blue; */
+    /* margin-left: 10px; */
+
 }
 .catalog-img{
     width: 15px;
@@ -207,7 +216,7 @@ body{
     /* background-color: rgb(146, 224, 56); */
 }
 .sec2-text {
-    width: 40%;
+    max-width: 600px;
     /* background-color: red; */
 }
 .sec2-h3 {
@@ -270,8 +279,8 @@ body{
 }
 .sec3-block1, .sec3-block2, .sec3-block3{
     background-size: cover;
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 350px;
     transition: 0.15s;
 }
 /* background: rgba(0, 0, 0, 0.315); */
@@ -281,8 +290,8 @@ body{
     
 }
 .sec3-block1:hover, .sec3-block2:hover, .sec3-block3:hover{
-    height: 525px;
-    width: 425px;
+    height: 475px;
+    width: 375px;
     box-shadow: 0 0 10px black;
     text-decoration: underline;
     text-decoration-color: white;
@@ -315,4 +324,72 @@ body{
 .footer-p {
     margin-top: 50px;
     width: 50%;
+}
+
+/*---------------------------------------------- */
+
+.menu-menu{
+  display: flex;
+  
+}
+
+.menu-menu li{
+  width: 200px;
+  list-style: none;
+  background: #ffffff;
+  position: relative;
+}
+
+.menu-menu a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 0 40px;
+  height: 40px;
+  line-height: 40px;
+  transition: all .5s;
+  /* background-color: red; */
+  /* background: url(../img/arrow.png); */
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+}
+#catalog-for-polosochki{
+    background: url(../img/catalog-img.png);
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+    background-size: 15px;
+}
+.menu-menu a:hover {
+    background: #e7e7e7;
+}
+
+.menu-menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+
+}
+
+.menu-menu li:hover > ul {
+  display: block;
+}
+
+.menu-menu ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+/* .menu-menu>li>ul>li{
+    background: #fff url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+} */
+#arrow:hover{
+    background: #ffffff url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px
 }
