@@ -185,10 +185,13 @@ body{
     align-items: center;
     /* background-color: rgb(56, 129, 224); */
 }
-.menu-account {
+.menu-account a{
     margin-left: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
     /* background-color: rgb(53, 255, 130); */
 }
 .account-name{
