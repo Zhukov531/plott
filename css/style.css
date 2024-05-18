@@ -153,12 +153,23 @@ body{
 }
 .header-btn{
     margin-top: 50px;
+    display: flex;
+}
+.header-btn a{
+    text-decoration: none;
 }
 .header-btn-btn {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    transition: .2s;
+}
+.header-btn-btn:hover{
+    background-color: #d8d8d8;
+    cursor: pointer;
+    padding: 17px 34px;
 }
 .header-img {
     /* background-color: blue; */
@@ -243,6 +254,7 @@ body{
 .sec3-h3 {
     font-size: 40px;
     font-weight: 400;
+    margin: 0;
 }
 .sec3-blocks {
     display: flex;
@@ -253,7 +265,6 @@ body{
 
 .sec3-block1 {
     background: url(../img/Кухня.JPG);
-    
 }
 .sec3-block2 {
     background: url(../img/гостиная.JPEG);
@@ -282,6 +293,7 @@ body{
     height: 450px;
     width: 350px;
     transition: 0.15s;
+    text-decoration: none;
 }
 /* background: rgba(0, 0, 0, 0.315); */
 .sec3-block1-content:hover{
@@ -389,7 +401,7 @@ body{
     background-position: center right 15px;
 } */
 #arrow:hover{
-    background: #ffffff url(../img/arrow.png);
+    background: #e7e7e7 url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: center right 15px
 }
