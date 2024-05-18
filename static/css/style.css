@@ -69,9 +69,77 @@ body{
 .catalog-catalog{
     /* margin-left: 10px; */
 
+
 }
 .catalog-img{
     width: 15px;
+}
+
+.menu-menu{
+  display: flex;
+}
+
+.menu-menu li{
+  width: 200px;
+  list-style: none;
+  background: #ffffff72;
+  position: relative;
+}
+
+.menu-menu a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 0 40px;
+  height: 40px;
+  line-height: 40px;
+  transition: all .5s;
+  /* background-color: red; */
+  /* background: url(../img/arrow.png); */
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+}
+#catalog-for-polosochki{
+    background: white url(../img/catalog-img.png);
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+    background-size: 15px;
+
+}
+.menu-menu a:hover {
+    background: #e7e7e780;
+}
+
+.menu-menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+
+}
+
+.menu-menu li:hover > ul {
+  display: block;
+}
+
+.menu-menu ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
+  
+}
+
+/* .menu-menu>li>ul>li{
+    background: #fff url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+} */
+#arrow:hover{
+    background: white url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px
 }
 .menu-search {
     /* background-color: green; */
@@ -234,6 +302,7 @@ body{
     /* background-color: rgb(56, 129, 224); */
     font-size: 25px;
     font-weight: 400;
+    margin: 0;
 }
 .sec2-p {
     /* background-color: rgb(56, 129, 224); */
@@ -339,69 +408,3 @@ body{
 }
 
 /*---------------------------------------------- */
-
-.menu-menu{
-  display: flex;
-  
-}
-
-.menu-menu li{
-  width: 200px;
-  list-style: none;
-  background: #ffffff;
-  position: relative;
-}
-
-.menu-menu a {
-  color: #000000;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  padding: 0 40px;
-  height: 40px;
-  line-height: 40px;
-  transition: all .5s;
-  /* background-color: red; */
-  /* background: url(../img/arrow.png); */
-  background-repeat: no-repeat;
-  background-position: center right 15px;
-}
-#catalog-for-polosochki{
-    background: url(../img/catalog-img.png);
-    background-repeat: no-repeat;
-    background-position: center left 15px;
-    background-size: 15px;
-}
-.menu-menu a:hover {
-    background: #e7e7e7;
-}
-
-.menu-menu ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  display: none;
-  padding: 0;
-
-}
-
-.menu-menu li:hover > ul {
-  display: block;
-}
-
-.menu-menu ul ul {
-  display: none;
-  top: 0;
-  left: 100%;
-}
-
-/* .menu-menu>li>ul>li{
-    background: #fff url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center right 15px;
-} */
-#arrow:hover{
-    background: #e7e7e7 url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center right 15px
-}
