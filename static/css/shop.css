@@ -1,180 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    box-sizing: border-box;
-}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Montserrat;
 }
-.header {
-    height: 100vh;
-    background: url(../static/img/12.JPG);
-    background-size: cover;
-    background-position: center bottom ;
-
-}
-.header-content{
+.sec1 {
     
-    /* background-color: red; */
 }
-.header-bg-transparent{
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.300);
+.sec1-content {
+    display: flex;
+
 }
-.menu {
-    /* padding: 0px 50px; */
-    height: 50px;
-    /* width: 100vw; */
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.sec1-catalog {
     background-color: #202020;
-    /* border-radius: 0px 0px 15px 15px; */
-    box-shadow: 0px 0px 15px black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-
+    width: 300px;
+    height: 100%;
 
 }
-.menu1, .menu2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* background-color: green; */
-    padding: 0;
+.ul1{
+    /* background-color: blue; */
     margin: 0;
- }
-
-.menu-catalog-content{
+    padding: 15px;
+}
+.li1{
+    /* background-color: purple; */
+    padding: 15px 0 ;
+}
+.name-catalog{
+    text-decoration: none;
+    color: white;
     /* background-color: red; */
+    padding: 10px 15px;
+    background-color: #595959;
+
+}
+.ul2{
+    /* background-color: yellow; */
+    margin-top: 25px;
+}
+.ul2 li{
+    /* background-color: rgb(0, 221, 255); */
+}
+
+
+/* Элементы каталога */
+.sec1-catalog li li{
+    background-color: #595959;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+}
+.sec1-catalog li li:hover{
+    cursor: pointer;
+    background-color: #828282;
+}
+
+/* -------------------------------------------------------- */
+
+.sec1-products {
+    /* background-color: red; */
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
-.catalog-catalog{
-    /* margin-left: 10px; */
-
-
+.sec1-cat-txt h1 {
+    font-size: 30px;
+    font-weight: 500;
 }
-.catalog-img{
-    width: 15px;
+.sec1-cat-cards {
+    /* background-color: blue; */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-.menu-menu{
-  display: flex;
-}
-
-.menu-menu li{
-  width: 200px;
-  list-style: none;
-  background: #ffffff72;
-  position: relative;
-}
-
-.menu-menu a {
-  color: #000000;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  padding: 0 40px;
-  height: 40px;
-  line-height: 40px;
-  transition: all .5s;
-  /* background-color: red; */
-  /* background: url(../img/arrow.png); */
-  background-repeat: no-repeat;
-  background-position: center right 15px;
-}
-#catalog-for-polosochki{
-    background: white url(../static/img/catalog-img.png);
-    background-repeat: no-repeat;
-    background-position: center left 15px;
-    background-size: 15px;
-
-}
-.menu-menu a:hover {
-    background: #e7e7e780;
-}
-
-.menu-menu ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  display: none;
-  padding: 0;
-
-}
-
-.menu-menu li:hover > ul {
-  display: block;
-}
-
-.menu-menu ul ul {
-  display: none;
-  top: 0;
-  left: 100%;
-  
-}
-
-/* .menu-menu>li>ul>li{
-    background: #fff url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center right 15px;
-} */
-#arrow:hover{
-    background: white url(../static/img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center right 15px
-}
-.menu-search {
-    /* background-color: green; */
-}
-.form-search{
-    /* width: 200px; */
-    float: right;
-    /* margin-right: 30px; */
-    /* background-color: chocolate; */
-}
-.form-search input{
-    width: 250px;
-    height: 42px;
-    padding-left: 15px;
-    border-radius: 42px;
-    border: 2px solid #ffffff;
-    background: transparent;
-    outline: none;
-    position: relative;
-    transition: .2s linear;
-    color: white;
-
-    /* background-color: aquamarine; */
-}
-.form-search input:focus{
-    box-shadow: 0 0 5px white;
-}
-/* .form-search button{
-    width: 42px;
-    height: 42px;
-    background: none;
-    border: 2px solid white;
-    position: absolute;
+.sec1-cat-card1 {
+    margin: 15px;
+    width: 300px;
+    height: 300px;
     border-radius: 30px;
-} */
-/* .form-search button::before{
-    content: "\f002";
-    font-family: FontAwesome;
-    color: #00e5ff;
-  } */
-.menu-shop-btn {
+    /* padding: 15px; */
+    background: url(../img/card1.JPG);
+    background-size: cover;
+    background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    /* background-color: rgb(56, 129, 224); */
+    justify-content: center;
+    box-shadow: 0 0 15px black;
 }
-.menu-account {
-    margin-left: 30px;
+.sec1-cat-card1:hover{
+}
+.sec1-cat-card-content {
+    
+    margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    /* background-color: rgb(53, 255, 130); */
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.2s;
 }
-.account-name{
-    margin-right: 5px;
-    /* background-color: rgb(224, 56, 188); */
+.sec1-cat-card-content:hover{
+    background-color: #0000007d;
+    font-size: 21px;
+}
+#card2{
+    background: url(../img/gost.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#card3{
+    background: url(../img/bath.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#card4{
+    background: url(../img/aroma.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#card5{
+    background: url(../img/accs.JPG);
+    background-size: cover;
+    background-position: center bottom -50px;
 }
