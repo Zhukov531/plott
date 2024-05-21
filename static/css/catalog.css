@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+.catall {
+    padding: 30px;
+    /* background-color: red; */
+}
+.catall-content {
+    /* background-color: blue; */
+}
+.catall-h1 {
+
+}
+.catall-blocks {
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+
+}
+.catall-bl1 {
+    /* background-color: red; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom -30px;
+    width: 450px;
+    height: 250px;
+    margin: 10px;
+}
+.catall-bl1-content {
+    /* margin-top: 100px; */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.201);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px; */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.catall-bl1-content:hover{
+    background-color: rgba(0, 0, 0, 0.546);
+}
+.catall-bl1-content p{
+    font-size: 20px;
+}
+#tarelka, #kastrulya, #stakan, #gost, #Bath{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#tarelka{
+    background: url(../img/tarelka.JPG);
+    background-position: center bottom -25px;
+    background-size: cover;
+}
+#kastrulya{
+    background: url(../img/kastrula.JPG);
+    background-position: center bottom -30px;
+}
+#stakan{
+    background: url(../img/kitchaccs.JPG);
+    background-position: center ;
+}
+#gost{
+    background: url(../img/gostaccs.JPG);
+    background-position: center bottom -110px;
+}
+#Bath{
+    background: url(../img/bathaccs.JPG);
+    background-position: center top -100px;
+}
+#kastrulya, #stakan, #gost, #Bath{
+    background-size: cover;
+    background-repeat: no-repeat;
+}

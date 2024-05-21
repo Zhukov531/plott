@@ -20,10 +20,12 @@ a{
     color: #fff;
 }
 .sec1-catalog {
-    background-color: #202020;
+    background-color: #838383;
     width: 300px;
     height: 100%;
-
+    border-radius: 30px;
+    margin: 15px;
+    border: 2px solid black;
 }
 .ul1{
     /* background-color: blue; */
@@ -40,7 +42,7 @@ a{
     /* background-color: red; */
     padding: 10px 15px;
     background-color: #595959;
-
+    border-radius: 30px;
 }
 .ul2{
     /* background-color: yellow; */
@@ -56,6 +58,7 @@ a{
     background-color: #595959;
     margin-bottom: 5px;
     padding: 10px 15px;
+    border-radius: 30px;
 }
 .sec1-catalog li li:hover{
     cursor: pointer;
