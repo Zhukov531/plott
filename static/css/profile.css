@@ -1,83 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-            font-family: montserrat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: url(../img/bgProfile.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container {
-            background-color: white;
-            /* border: 1px solid #ffffff; */
-            border-radius: 8px;
-            padding: 50px 100px;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 0 15px black;
-        }
-        .header {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 20px;
-
-        }
-        .profile-image {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .profile-image img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            margin-right: 20px;
-        }
-        .profile-image input {
-            display: none;
-        }
-        .profile-image label {
-            cursor: pointer;
-            color: #007bff;
-            text-decoration: underline;
-        }
-        .form-group {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .form-group input {
-            width: 48%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 30px;
-        }
-        .form-group:last-child {
-            justify-content: flex-start;
-        }
-        .save-button, .toHome {
-            display: block;
-            margin: 20px 0 10px auto;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 30px;
-        }
-        .save-button:hover {
-            background-color: #0056b3;
-        }
-        .toHome{
-            background-color: #1d1d1d;
-        }
-        .toHome:hover{
-            background-color: #545454;
-        }
+body{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background: url(../img/bgProfile.png);
+    background-size: cover;
+}
+.aut {
+    height: 100vh;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aut-content {
+    width: 650px;
+    height: 590px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aut-avatar-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.aut-avatar-name p{
+    margin: 10px;
+}
+.aut-form {
+    margin-top: 30px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aut-pass input, .aut-email input, .aut-phone input{
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.join{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #7E7B74;
+    color: white;
+}
+.join:active{
+    background-color: #9a9a9a;
+    color: white;
+}
+.regist{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    background: #DFA539;
+    color: white;
+}
+.regist:active{
+    background: #946d25;
+    color: white;
+}
+.backtohome{
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+}
