@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLOTT. Shop</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="../static/css/shop.css">
-</head>
-<body>
-   
+{% extends "base.html" %}
+
+
+
+
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/shop.css">
+
+{% endblock %}
+
+
+{% block body %}
     <div class="sec1">
         <div class="sec1-content">
             <div class="sec1-catalog">
@@ -20,8 +22,6 @@
                         <ul class="ul2">
                             <li><a href="#">Приборы</a></li>
                             <li><a href="#">Кастрюли</a></li>
-                            <li><a href="#">Столы</a></li>
-                            <li><a href="#">Стулья</a></li>
                             <li><a href="#">Тарелки</a></li>
                             <li><a href="#">Стаканы</a></li>
                         </ul>
@@ -39,7 +39,7 @@
                             <li><a href="#">Свечи</a></li>
                         </ul>
                     </li>
-                    <li  class="li1">
+                    <li class="li1">
                         <a class="name-catalog" id="arrow" href="#">
                             Ванная
                         </a>
@@ -48,6 +48,8 @@
                             <li><a href="#">Полотенца</a></li>
                             <li><a href="#">Коврики</a></li>
                         </ul>
+                    <li class="li1">
+                        <a href="./index.html" class="backtohome">Вернуться на главную</a>
                     </li>
                 </ul>
             </div>
@@ -90,5 +92,4 @@
         </div>
     </div>
 
-</body>
-</html>
+{% endblock %}  

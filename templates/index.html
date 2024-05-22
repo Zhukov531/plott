@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLOTT.</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-    
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/style.css">
+{% endblock %}
+
+{% block body %}
     <div class="header">
         <div class="menu">
             <div class="menu1">
@@ -52,9 +49,6 @@
 
                 
             </div>
-
-            
-
             </div>
             <div class="menu-search">
                 <form action="" class="form-search" >
@@ -64,10 +58,12 @@
             </div>
             <div class="menu2">
             <div class="menu-shop-btn">
-                <img src="./img/menu-shop.png" alt="" class="menu-shop-btn-img">
+                <a href="./trash.html">
+                    <img src="../static/img/menu-shop.png" alt="" class="menu-shop-btn-img">
+                </a>
             </div>
             <div class="menu-account">
-                <a href="./autorization.html">
+                <a href="./auth.html">
                     <span class="account-name">Войти</span>
                     <img src="../static/img/avatar-logo.png" alt="" class="avatar-logo">
                 </a>
@@ -165,7 +161,5 @@
             </div>
         </div>
     </div>
-    <div class="div">Hello world</div>
 
-</body>
-</html>
+

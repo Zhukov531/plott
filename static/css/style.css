@@ -250,6 +250,7 @@ body{
 .header-btn{
     margin-top: 50px;
     display: flex;
+    
 }
 .header-btn a{
     text-decoration: none;
@@ -261,6 +262,7 @@ body{
     border: none;
     font-size: 18px;
     transition: .2s;
+    border-radius: 30px;
 }
 .header-btn-btn:hover{
     background-color: #d8d8d8;
@@ -378,6 +380,7 @@ body{
     background: rgba(0, 0, 0, 0.115);
     height: 100%;
     transition: 0.15s;
+    border-radius: 30px;
 }
 .sec3-block1-text {
     /* background-color: red; */
@@ -391,6 +394,7 @@ body{
     width: 350px;
     transition: 0.15s;
     text-decoration: none;
+    border-radius: 30px;
 }
 /* background: rgba(0, 0, 0, 0.315); */
 .sec3-block1-content:hover{

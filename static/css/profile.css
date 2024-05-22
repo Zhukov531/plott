@@ -61,7 +61,7 @@ body {
         .form-group:last-child {
             justify-content: flex-start;
         }
-        .save-button {
+        .save-button, .toHome {
             display: block;
             margin: 20px 0 10px auto;
             padding: 10px 20px;
@@ -74,4 +74,10 @@ body {
         }
         .save-button:hover {
             background-color: #0056b3;
+        }
+        .toHome{
+            background-color: #1d1d1d;
+        }
+        .toHome:hover{
+            background-color: #545454;
         }

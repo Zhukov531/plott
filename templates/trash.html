@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../static/css/trash.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">КОРЗИНА</div>
+        <div class="cart-item" data-price="11999">
+            <input type="checkbox" class="item-checkbox">
+            <img src="../static/img/Кресло1.png" alt="Кресло для отдыха Сиеста">
+            <div class="cart-item-info">
+                <h3>Кресло для отдыха Сиеста</h3>
+                <p>Артикул: 80311277</p>
+                <p>Доступно для доставки</p>
+            </div>
+            <div class="cart-item-price">
+                <del>11 999 ₽</del> <span class="price">11 999 ₽</span>
+                <div class="cart-item-actions">
+                    <button class="minus-button">-</button>
+                    <input type="text" value="1" class="quantity">
+                    <button class="plus-button">+</button>
+                    <button>❤</button>
+                    <button>🗑</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-item" data-price="999">
+            <input type="checkbox" class="item-checkbox">
+            <img src="../static/img/Кресло1-Photoroom 1.png" alt="Зеркало">
+            <div class="cart-item-info">
+                <h3>Зеркало</h3>
+                <p>Артикул: 80311277</p>
+                <p>Доступно для доставки</p>
+            </div>
+            <div class="cart-item-price">
+                <span class="price">999 ₽</span>
+                <div class="cart-item-actions">
+                    <button class="minus-button">-
+                    </button>
+                    <input type="text" value="1" class="quantity">
+                    <button class="plus-button">+</button>
+                    <button>❤</button>
+                    <button>🗑</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <div>ИТОГО: <span class="total-price">0 ₽</span></div>
+            <button>ОФОРМИТЬ ЗАКАЗ</button>
+        </div>
+    </div>
+
+    <div class="backtohome"><a href="../templates/index.html">Вернуться на сайт</a></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('.item-checkbox');
+            const totalPriceElement = document.querySelector('.total-price');
+            const updateTotalPrice = () => {
+                let total = 0;
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const cartItem = checkbox.closest('.cart-item');
+                        const quantityInput = cartItem.querySelector('.quantity');
+                        const price = parseInt(cartItem.getAttribute('data-price'));
+                        const quantity = parseInt(quantityInput.value);
+                        total += price * quantity;
+                    }
+                });
+                totalPriceElement.textContent = `${total} ₽`;
+            };
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateTotalPrice);
+            });
+
+            const quantityInputs = document.querySelectorAll('.quantity');
+            quantityInputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    if (input.value < 1) input.value = 1;
+                    updateTotalPrice();
+                });
+            });
+
+            const plusButtons = document.querySelectorAll('.plus-button');
+            plusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = button.previousElementSibling;
+                    input.value = parseInt(input.value) + 1;
+                    updateTotalPrice();
+                });
+            });
+
+            const minusButtons = document.querySelectorAll('.minus-button');
+            minusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = button.nextElementSibling;
+                    if (input.value > 1) {
+                        input.value = parseInt(input.value) - 1;
+                        updateTotalPrice();
+                    }
+                });
+            });
+
+            updateTotalPrice();
+        });
+    </script>
+</body>
+</html>

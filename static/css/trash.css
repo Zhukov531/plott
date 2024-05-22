@@ -1,0 +1,96 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .cart-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+        }
+        .cart-item-info h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .cart-item-info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .cart-item-price {
+            text-align: right;
+        }
+        .cart-item-price del {
+            color: #777;
+            margin-right: 10px;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .cart-item-actions input {
+            width: 30px;
+            text-align: center;
+        }
+        .cart-item-actions button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cart-total button {
+            padding: 10px 20px;
+            background-color: #f0ad4e;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    .backtohome{
+        text-align: center;
+    }
+        .backtohome a{
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: #fff;
+            padding: 10px 30px;
+        }
