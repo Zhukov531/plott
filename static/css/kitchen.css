@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: Montserrat;
+}
+.kitchen {
+}
+.kitchen-content {
+    padding: 50px;
+
+}
+.kitchen-name {
+    margin-bottom: 50px;
+}
+.kitchen-h1 {
+}
+.kitchen-text {
+}
+.kitchen-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.kitchen-card-content a{
+    text-decoration: none;
+    color: black;
+}
+.card {
+    margin: 30px;
+    background: #fff;
+    box-shadow: 0 0 15px black;
+    border-radius: 30px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-content {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.card-img{
+    /* background-color: #ddff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec-card{
+    /* background-color: red; */
+    width: 60%;
+}
+.card-img img{
+    /* background-color: green; */
+    width: 80%;
+
+}
+.card-txt {
+    margin-top: 15px;
+    display: flex;
+    /* background: green; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-text {
+    /* background: rgb(3, 242, 255); */
+    width: 80%;
+}
+.card-txt-name {
+    font-size: 25px;
+    font-weight: 500;
+    /* background: lightblue; */
+    margin-bottom: 15px;
+    margin: 0;
+}
+.card-txt-price{
+    margin-top: 5px;
+    
+}
+.card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#span-price{
+    font-weight: 400;
+    font-size: 20px;
+}
+#span-zacherk{
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: rgb(43, 43, 43);
+}

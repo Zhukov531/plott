@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+
+
+
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/product.css">
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="product">
+    <div class="product-content">
+
+        <div class="carousel">
+            <img src="../static/img/waf1 (фон удален).png" class="active" alt="Photo 1">
+            <img src="../static/img/waf2.jpg" alt="Photo 2">
+            <img src="../static/img/waf3 (фон удален).png" alt="Photo 3">
+            <img src="../static/img/waf4 (фон удален).png" alt="Photo 4">
+        
+            <div class="carousel-buttons">
+                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button next">&gt;</button>
+            </div>
+        </div>
+        <div class="prod-text">
+            <div class="prod-text-content">
+                <div class="h1">
+                    Суперпекарь, электрический, 800 Вт, 2 сменные панели, сталь/пластик, бежевый, Chalet
+                </div>
+                <div class="price">9 990 Р</div>
+                <div class="btn"> 
+                    <a href="">
+                        <div class="btn1">В корзину</div>
+                    </a>
+                    <a href="">
+                        <div class="btn2">Купить сейчас</div>
+                    </a>
+                </div>
+                <div class="descript">
+                    <div class="h2descript-name">
+                        Описание
+                    </div>
+                    <div class="pdescript-text">
+                        Суперпекарь, электрический, со сменными панелями. <br>
+
+Материал: нержавеющая сталь, пластик. <br>
+Мощность: 800 Вт.<br>
+Размер: 23x24x10 см.<br>
+Комплектация:<br>
+панель-гриль - 1шт;<br>
+панель для бельгийских вафель - 1 шт.<br>
+<br>
+Рекомендации по уходу:<br>
+Корпус протирать мягкой влажной тканью.<br> Нельзя мыть в посудомоечной машине.<br>
+Предназначен для бытового использования.<br>
+Инструкция по эксплуатации внутри упаковки.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const nextButton = document.querySelector('.carousel-button.next');
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+
+        prevButton.addEventListener('click', () => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            images[currentIndex].classList.add('active');
+        });
+
+        nextButton.addEventListener('click', () => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            images[currentIndex].classList.add('active');
+        });
+    </script>
+{% endblock %}  

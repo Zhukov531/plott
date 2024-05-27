@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+
+
+
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/kitchen.css">
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="kitchen">
+    <div class="kitchen-content">
+        <div class="kitchen-name">
+            <h1 class="kitchen-h1">Кухня</h1>
+        </div>
+        <div class="kitchen-text">
+            <div class="kitchen-card-content">
+
+            <a href="./product">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="../static/img/waf1 (фон удален).png" alt="Суперпекарь">
+                        </div>
+                        <div class="card-txt">
+                            <div class="card-text">
+                                <div class="card-txt-name">Суперпекарь, электрический</div>
+                                <div class="card-txt-price">
+                                    <span id="span-price">9 990₽</span>
+                        <!-- <span id="span-zacherk">12 999₽</span> -->
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <a href="">
+                                    <img src="../static/img/to-trash-logo.png" alt="Добавить в корзину">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img id="sec-card" src="../static/img/tea1 (фон удален).png" alt="Чайник">
+                        </div>
+                        <div class="card-txt">
+                            <div class="card-text">
+                                <div class="card-txt-name">Чайник, 3 л, со свистком</div>
+                                <div class="card-txt-price">
+                                    <span id="span-price">2 990₽</span>
+                        <!-- <span id="span-zacherk">12 999₽</span> -->
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <a href="">
+                                    <img src="../static/img/to-trash-logo.png" alt="Добавить в корзину">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img id="sec-card" src="../static/img/bread1 (фон удален).png" alt="Хлебница">
+                        </div>
+                        <div class="card-txt">
+                            <div class="card-text">
+                                <div class="card-txt-name">Хлебница</div>
+                                <div class="card-txt-price">
+                                    <span id="span-price">4 990₽</span>
+                        <!-- <span id="span-zacherk">12 999₽</span> -->
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <a href="">
+                                    <img src="../static/img/to-trash-logo.png" alt="Добавить в корзину">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}  

@@ -44,6 +44,20 @@ body{
     padding: 0;
     margin: 0;
  }
+ .logo{
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+ }
+
  /*
 .img-logo {
     background-color: #ffffff;
@@ -55,12 +69,9 @@ body{
 /* .menu-catalog {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
     font-size: 18px;
-    margin-left: 20px;
-    padding: 8px 20px;
-    border-radius: 30px;
-    color: black;
+
+
 } */
 .menu-catalog-content{
     /* background-color: red; */
@@ -97,13 +108,14 @@ body{
   display: block;
   text-align: left;
   padding: 0 40px;
-  height: 40px;
-  line-height: 40px;
+  /* height: 40px; */
+  /* line-height: 40px; */
   transition: all .5s;
   /* background-color: red; */
   /* background: url(../img/arrow.png); */
   background-repeat: no-repeat;
   background-position: center right 15px;
+  padding: 10px;
 }
 /* #catalog-for-polosochki{
     background:  url(../img/catalog-img.png);
@@ -116,7 +128,7 @@ body{
     background-color: red;
 } */
 #catalog-for-polosochki{
-
+    padding: 10px;
 }
 
 .menu-menu a:hover {
@@ -143,7 +155,7 @@ body{
   display: none;
   top: 0;
   left: 100%;
-  
+
 }
 
 /* .menu-menu>li>ul>li{
@@ -198,7 +210,13 @@ body{
 .menu-shop-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* background-color: rgb(56, 129, 224); */
+}
+.menu-shop-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu-account a{
     margin-left: 30px;
@@ -224,193 +242,7 @@ body{
 
 /* ---------------------------------------------------------------- */
 
-.header-content {
-    padding: 0 100px;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    /* background-color: red; */
-    color: white;
-}
-.header-text {
-    width: 50%;
-    margin-top: -150px;
-    /* background-color: green; */
-    /* background-color: rgb(56, 129, 224); */
-}
-.header-h1 h1{
-    font-size: 70px;
-    margin: 0;
-    /* background-color: rgb(56, 224, 112); */
-}
-.header-p {
-    font-size: 20px;
-    max-width: 70%;
-}
-.header-btn{
-    margin-top: 50px;
-    display: flex;
-    
-}
-.header-btn a{
-    text-decoration: none;
-}
-.header-btn-btn {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 15px 30px;
-    border: none;
-    font-size: 18px;
-    transition: .2s;
-    border-radius: 30px;
-}
-.header-btn-btn:hover{
-    background-color: #d8d8d8;
-    cursor: pointer;
-    padding: 15px 35px;
-}
-.header-img {
-    /* background-color: blue; */
-    width: 50%;
-    /* background-color: rgb(224, 56, 224); */
-}
-.header-img img{
-    top: 35%;
-    width: 40%;
-    position: absolute;
-    /* background-color: aqua; */
-}
-
-/* ---------------------------------------------------------------- */
-
-.section2 {
-    /* background-color: #DEF3F0; */
-    background: url(../img/13.JPG);
-    height: 100vh;
-    background-position: center ;
-    background-size: cover;
-}
-.section2_content {
-    padding: 100px;
-    background-color: rgba(0, 0, 0, 0.150);
-    height: 100vh;
-    color: white;
-}
-.sec2-text{
-    background-color: #00000086;
-    backdrop-filter: blur(3px);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.507);
-}
-.sec2-h2 {
-    margin: 0;
-    text-align: left;
-    font-size: 40px;
-    font-weight: 400;
-    /* background-color: rgb(56, 224, 120); */
-}
-.sec2-block {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-    margin-top: 100px;
-    /* background-color: rgb(224, 56, 56); */
-}
-.sec2-chair {
-    /* background-color: rgb(56, 129, 224); */
-    /* background-color: green; */
-}
-.sec2-img {
-    /* background-color: rgb(146, 224, 56); */
-}
-.sec2-text {
-    max-width: 600px;
-    /* background-color: red; */
-}
-.sec2-h3 {
-    /* background-color: rgb(56, 129, 224); */
-    font-size: 25px;
-    font-weight: 400;
-    margin: 0;
-}
-.sec2-p {
-    /* background-color: rgb(56, 129, 224); */
-    font-size: 20px;
-    font-weight: 300;
-}
-
-
-/* ------------------------------------------------------------------ */
-
-
-.section3 {
-    background-color: #fff;
-}
-.sec3-content {
-    padding: 100px;
-}
-.sec3-h3 {
-    font-size: 40px;
-    font-weight: 400;
-    margin: 0;
-}
-.sec3-blocks {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-
-.sec3-block1 {
-    background: url(../img/Кухня.JPG);
-}
-.sec3-block2 {
-    background: url(../img/гостиная.JPEG);
-}
-.sec3-block3 {
-    background: url(../img/Ванная.JPG);
-}
-
-.sec3-block1-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.115);
-    height: 100%;
-    transition: 0.15s;
-    border-radius: 30px;
-}
-.sec3-block1-text {
-    /* background-color: red; */
-    font-size: 25px;
-    color: white;
-    transition: 0.15s;
-}
-.sec3-block1, .sec3-block2, .sec3-block3{
-    background-size: cover;
-    height: 450px;
-    width: 350px;
-    transition: 0.15s;
-    text-decoration: none;
-    border-radius: 30px;
-}
-/* background: rgba(0, 0, 0, 0.315); */
-.sec3-block1-content:hover{
-    background: rgba(0, 0, 0, 0.415);
-    transition: 0.15s;
-    
-}
-.sec3-block1:hover, .sec3-block2:hover, .sec3-block3:hover{
-    height: 475px;
-    width: 375px;
-    box-shadow: 0 0 10px black;
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-
-/* ------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------- */
 
 .footer {
     background-color: #202020;
@@ -440,3 +272,11 @@ body{
 }
 
 /*---------------------------------------------- */
+
+
+/* @media screen and (max-width: 430px) {
+    .menu{
+        height: 100%;
+        background-color: #fff;
+    }
+} */
