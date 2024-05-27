@@ -30,7 +30,13 @@ def trash():
 def profile():
     return render_template('profile.html')
 
+@mod.route('/kitchen', methods=['GET', 'POST'])
+def kitchen():
+    return render_template('kitchen.html')
 
+@mod.route('/product', methods=['GET', 'POST'])
+def product():
+    return render_template('product.html')
     
 
     

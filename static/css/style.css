@@ -215,3 +215,76 @@ body{
 }
 
 /* ------------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 1000px) {
+    .header-content{
+        /* background-color: red; */
+    }
+    .header-img{
+        display: none;
+    }
+    .header-text{
+        width: 90%;
+    }
+    .header-text h1{
+        font-size: 110px;
+    }
+    .header-p{
+        font-size: 35px;
+        max-width: 100%;
+    }
+    .header-btn-btn{
+        font-size: 40px;
+        padding: 30px 60px;
+
+    }
+    .section2_content{
+        padding: 50px;
+    }
+    .sec2-h2{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .sec2-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec2-text{
+        max-width: 90%;
+    }
+    .sec2-h3{
+        font-size: 50px;
+    }
+    .sec2-p{
+        font-size: 40px;
+    }
+    .sec2-chair{
+        display: none;
+    }
+    .sec3-content{
+        padding: 50px;
+    }
+    .sec3-h3{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .sec3-blocks{
+        flex-wrap: wrap;
+    }
+    .sec3-block1, .sec3-block2, .sec3-block3{
+        width: 700px;
+        height: 900px;
+        margin-top: 50px;
+    }
+    .sec3-block1-text{
+        font-size: 60px;
+    }
+    .sec3-block1:hover, .sec3-block2:hover, .sec3-block3:hover{
+    height: 850px;
+    width: 650px;
+}
+
+/* ------------------------------------------------------------------------- */
+
